@@ -1,0 +1,108 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Successfull Login with valid credentials",
+        "description": "",
+        "id": "login-test;successfull-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16091882600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on home page",
+            "match": {
+              "location": "StepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 669938600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Log in link",
+            "match": {
+              "location": "StepDefinition.click_on_Log_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5558381800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enters email and password and clicks login",
+            "match": {
+              "location": "StepDefinition.enters_email_and_password_and_clicks_login(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "pratiksha@test.com",
+                  "pratiksha"
+                ]
+              },
+              {
+                "cells": [
+                  "rick@test.com",
+                  "tester"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User logged in successfully",
+            "match": {
+              "location": "StepDefinition.user_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Login test",
+    "description": "",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "Feature/login.feature",
+    "tags": [
+      {
+        "name": "@SmokeTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
