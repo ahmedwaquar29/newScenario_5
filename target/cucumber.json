@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 5,
+        "line": 4,
         "name": "Successfull Login with valid credentials",
         "description": "",
         "id": "login-test;successfull-login-with-valid-credentials",
@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16091882600,
+              "duration": 12752506685,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 669938600,
+              "duration": 1091018099,
               "status": "passed"
             },
             "line": 7,
@@ -36,8 +36,9 @@
           },
           {
             "result": {
-              "duration": 5558381800,
-              "status": "passed"
+              "duration": 2894656,
+              "error_message": "cucumber.runtime.CucumberException: Not a Map or List type: class io.cucumber.datatable.DataTable\r\n\tat cucumber.runtime.table.TableConverter.convert(TableConverter.java:75)\r\n\tat cucumber.runtime.StepDefinitionMatch.tableArgument(StepDefinitionMatch.java:97)\r\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:74)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "status": "failed"
             },
             "line": 8,
             "name": "Enters email and password and clicks login",
@@ -49,42 +50,36 @@
                 "cells": [
                   "email",
                   "password"
-                ]
+                ],
+                "line": 10
               },
               {
                 "cells": [
                   "pratiksha@test.com",
                   "pratiksha"
-                ]
+                ],
+                "line": 11
               },
               {
                 "cells": [
                   "rick@test.com",
                   "tester"
-                ]
+                ],
+                "line": 12
               }
             ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 37500,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 12,
+            "line": 14,
             "name": "User logged in successfully",
             "match": {
               "location": "StepDefinition.user_logged_in_successfully()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@SmokeTest"
-          },
-          {
-            "name": "@tag1"
           }
         ]
       }
@@ -93,16 +88,6 @@
     "description": "",
     "id": "login-test",
     "keyword": "Feature",
-    "uri": "Feature/login.feature",
-    "tags": [
-      {
-        "name": "@SmokeTest",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "login.feature"
   }
 ]
